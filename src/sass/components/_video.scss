@@ -1,0 +1,7 @@
+.video {
+    &-wrapper { position: relative; padding-bottom: 56.25%; /* 16:9 -> 9/16x100 */ overflow: hidden;
+    }
+}
+
+iframe {  position: absolute; margin: 0 auto; width: 70%; height: 70%; }
+

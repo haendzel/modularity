@@ -1,0 +1,6 @@
+.quotes { 
+    &-item { display: flex; justify-content: center; align-items: center; height: 60vh;
+        &-text { font-style: italic; font-weight: 400; }
+        &-author { font-size: $standard_fontsize; font-style: normal; opacity: .7; font-weight: 300; margin-left: 1rem; }
+    }
+}
