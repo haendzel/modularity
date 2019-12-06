@@ -1,0 +1,7 @@
+#partners { 
+    .content { width: 100%; }
+    .partners { display: flex; flex-wrap: wrap; align-items: center;  }
+    .slot { flex: 1 1 24%; 
+        img, svg { padding-top: 10px; padding-bottom: 10px; }
+    }
+}

@@ -1,7 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
-$font_primary: 'Vollkorn' , serif;
+h1 { font-size: 5.6rem; font-weight: bold; }
+h2 { font-size: 3.2rem; font-weight: bold; }
+h3 { text-transform: uppercase; font-weight: 300; font-size: 1.6rem; }
 
-h1 { font-size: $large_fontsize;  font-family: $font-primary; color: $primary_color;
-    @include bp(phablet) { font-size: $small_fontsize; }
+a {
+    &:any-link { color: #fff; text-decoration: none; }
 }

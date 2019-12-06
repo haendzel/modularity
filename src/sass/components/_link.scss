@@ -1,9 +1,1 @@
-.link { height: 4rem; color: $primary_color; margin-right: 10rem; font-style: normal; font-size: $large_fontsize; text-decoration: none; 
-    text-transform: uppercase; transition: $transition_default;
-    &:hover, &:active { background-image: url(../../images/underline.png); background-size: cover; text-decoration: none; cursor: pointer; 
-        &:nth-of-type(1) { background-image: url(../../images/underline2.png); }
-        &:nth-of-type(2) { background-image: url(../../images/underline.png); }
-        &:nth-of-type(3) { background-image: url(../../images/underline3.png); }
-        &:nth-of-type(4) { background-image: url(../../images/underline4.png); }
-    }
-}
+.link {  }

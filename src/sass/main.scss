@@ -7,28 +7,33 @@
 
 /* BASE */
 @import 
+    'base/common',
     'base/typography';
 
 /* COMPONENTS */
 @import 
     'components/burger',
     'components/button',
+    'components/info',
     'components/list',
     'components/link',
     'components/quotes',
     'components/video',
+    'components/content',
+    'components/slot',
     'components/lang';
 
 /* LAYOUT */
 @import 
-    'layout/page',
-    'layout/nav',
     'layout/header',
+    'layout/section',
     'layout/footer';
 
 /* SECTIONS */
 @import 
-    'sections/home';
+    'sections/one',
+    'sections/two',
+    'sections/partners';
 
 /* VENDORS */
 //nothing
