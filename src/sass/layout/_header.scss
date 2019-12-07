@@ -1,13 +1,14 @@
-header { max-width: 100vw; height: 10rem; background-color: black;
+header { position: fixed; width: 100%; padding: 0; height: 10rem; background-color: black; z-index: $z_index_over_all;
     img { width: 19.5rem; height: 1.6rem; }
 }
 
-.logo { padding-top: 3.9rem; float: left; }
+.logo { padding-left: 16rem; padding-top: 3.9rem; float: left; }
 
-ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: black; }
+ul {float: right; list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: black; }
   
-li { float: right; text-transform: uppercase;
+li { float: left; text-transform: uppercase;
   a { display: block; color: white; text-align: center; padding: 3.9rem 2.4rem; text-decoration: none;
-    &:hover { background-color: #111; }
+    &:hover { background-color: #111; 
+    }
   }
 }

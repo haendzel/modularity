@@ -1,0 +1,13 @@
+#contact { padding: 0; font-weight: 100; line-height: 2.4rem; position: relative; 
+    background: url(../../images/map-test.png) no-repeat; height: 80rem;
+
+.cont { padding-top: 1.5rem; padding-bottom: 1.5rem;
+    &-title { font-weight: bold; }
+}
+
+.contact { font-weight: bold; }
+
+.address {
+    &-title { font-weight: 900; }
+    }
+}

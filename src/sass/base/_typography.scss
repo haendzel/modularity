@@ -2,7 +2,9 @@
 
 h1 { font-size: 5.6rem; font-weight: bold; }
 h2 { font-size: 3.2rem; font-weight: bold; }
+.contact { font-size: 4rem; }
 h3 { text-transform: uppercase; font-weight: 300; font-size: 1.6rem; }
+.form-title { text-transform: none; font-weight: bold; font-size: 2.4rem;}
 
 a {
     &:any-link { color: #fff; text-decoration: none; }

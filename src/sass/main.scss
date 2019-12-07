@@ -16,25 +16,31 @@
     'components/button',
     'components/info',
     'components/list',
+    'components/form',
     'components/link',
     'components/quotes',
     'components/video',
     'components/content',
     'components/slot',
+    'components/social',
     'components/lang';
 
 /* LAYOUT */
 @import 
     'layout/header',
     'layout/section',
+    'layout/article',
     'layout/footer';
 
 /* SECTIONS */
 @import 
-    'sections/one',
+    'sections/product',
     'sections/two',
     'sections/partners',
-    'sections/features';
+    'sections/features',
+    'sections/team',
+    'sections/about',
+    'sections/contact';
 
 /* VENDORS */
 //nothing
