@@ -20,7 +20,8 @@ const config = {
         fonts: './src/fonts/*',
         images: './src/images/*.*',
         html: './src/*.html',
-        php: './src/*.php'
+        php: './src/*.php',
+        css: './src/*.css'
     },
     dist: {
         base: './',
@@ -83,6 +84,12 @@ function phpTask(done) {
     done();
 }
 
+function styleTask(done) {
+    src(config.app.css)
+        .pipe(dest(config.dist.base))
+    done();
+}
+
 function watchFiles() {
     watch(config.app.js, series(jsTask, reload));
     watch(config.app.scss, series(cssTask, reload));
@@ -109,5 +116,5 @@ function cleanUp() {
     return del([config.dist.base]);
 }
 
-exports.dev = parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, phpTask, watchFiles, liveReload);
-exports.build = series(cleanUp, parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, phpTask));
+exports.dev = parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, phpTask, watchFiles, styleTask, liveReload);
+exports.build = series(cleanUp, parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, styleTask, phpTask));
