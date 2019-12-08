@@ -1,10 +1,9 @@
 #features { height: 192rem; margin-bottom: 1rem;
-    .info { 
-        &:nth-child(even) { padding-right: 16rem; padding-left: 0;}
-        &:nth-child(odd) { padding-right: 0; padding-left: 16rem; }
-    }
     .content { width: 100%; }
     article { 
-        &:nth-child(even) { flex-direction: row-reverse; }
+        &:nth-child(even) { flex-direction: row-reverse;}
+        .content { padding-left: 16rem; 
+            &:nth-child(even) { padding-left: 5rem; padding-right: 16rem; }
+        }
     }
 }

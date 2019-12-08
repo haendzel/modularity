@@ -1,1 +1,5 @@
-.form { position: absolute; left: 16rem; top: 8rem; width: 40rem; height: 64rem; background-color: black; }
+.form { position: absolute; left: 16rem; top: 5rem; bottom: 3rem; max-width: 40rem; background-color: black; 
+    button { padding: 1rem 4.5rem; }
+}
+
+input, textarea { min-width: 34rem; border: 1px solid #3f3f3f; border-radius: .4rem; width: 27.5rem; padding: .6rem; background-color: #3f3f3f; color: #fff; font-size: 1.6rem; line-height: 2.4rem; }

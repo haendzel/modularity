@@ -13,7 +13,7 @@
 
 <div class="container">
     
-    <header>
+    <header> <!-- HEADER NAV -->
         <a href="#" class="logo"><img src="/images/logo.svg"></a>
             <ul>
                 <li><a href="#product">Product</a></li>
@@ -36,8 +36,10 @@
                             typically to bring about beneficial change or added value. The object of project management 
                             is to produce a complete project which complies with the client's objectives.
                         </div>
-                        <button>main cta</button>
-                        <button>second cta</button>
+                        <div class="content-btns">
+                            <button class="is-active" onclick="location.href='#product';">main cta</button>
+                            <button onclick="location.href='#two';">second cta</button>
+                        </div>
                     </div>
                 </div>
 
@@ -52,7 +54,7 @@
             <div class="info">
                 <h3 class="subtitle">inmarketing</h3>
                 <h2 class="title">Product is an object made available for consumer use</h2>
-                <div class="link"><a href="#"><img src="/images/arrow-down.svg">Explore</a></div>
+                <div class="link"><a href="#partners"><img src="/images/arrow-down.svg">Explore</a></div>
             </div>
         </div>
     </section>
@@ -84,6 +86,16 @@
                             <div class="desc">Parameters that are essential to the respective service and that describe 
                                 the important dimension(s) of the servicescape, the service output or the service outcome.
                             </div>
+                            <div class="highlight-group">
+                                <div class="highlight">
+                                    <img class="icon" src="images/watch-icon.svg">
+                                    <div class="short-desc">Your advantages help clients to make their decision</div>
+                                </div>
+                                <div class="highlight">
+                                    <img class="icon" src="images/coffee-icon.svg">
+                                    <div class="short-desc">Your advantages help clients to make their decision</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="content-photo"><img src="images/bike-feature1.png"></div>
@@ -98,6 +110,16 @@
                             At this point the service delivery preparation can be assessed and delivery can be monitored and controlled.
                         </div>
                     </div>
+                    <div class="highlight-group">
+                            <div class="highlight">
+                                <span class="text"><h2>+120%</h2></span>
+                                <div class="short-desc--text">Your advantages help clients to make their decision</div>
+                            </div>
+                            <div class="highlight">
+                                <span class="text"><h2>2 times</h2></span>
+                                <div class="short-desc--text">Your advantages help clients to make their decision</div>
+                            </div>
+                        </div>
                 </div>
                 <div class="content-photo"><img src="images/bike-feature2.png"></div>
                 </article>
@@ -110,13 +132,19 @@
                         <div class="desc">The moments when the service is available and all the specified service elements are available at the delivery point.
                         </div>
                     </div>
+                    <div class="highlight-group">
+                        <div class="highlight">
+                            <h3 class="form-title">Subscribe to our news:</h3>
+                            <input type="email" id="email" name="email" value="*Your e-mail address"> 
+                        </div>
+                    </div>
                 </div>
 
                 <div class="content-photo"><img src="images/bike-feature3.png"></div>
                 </article>
         </section>
 
-        <section id="team">
+        <section id="team"> <!--- SECTION TEAM -->
             <div class="wrapper">
                 <div class="content">
                     <div class="info">
@@ -163,7 +191,7 @@
             </div> <!-- wrapper -->
         </section>
 
-        <section id="about">
+        <section id="about"> <!--- SECTION ABOUT -->
             <div class="wrapper">
                 <div class="aboutus">
                     <div class="content">
@@ -192,41 +220,45 @@
             </div>
         </section>
 
-    <section id="contact">
+    <section id="contact"> <!-- SECTION CONTACT -->
         <div class="form">
-            <h2 class="contact">Contact us</h2>
-            <div class="address">
-                <span class="address-title">Corporate headquarters</span>
-                <div class="address-data">27 Merry Lane NP000126854<br>
-                        New Jersey, East Hanover, 07936</div>
-                <div class="cont">
-                    <span class="cont-title">Phone: </span><span>123456789</span><br>
-                    <span class="cont-title">Email: </span><span>hello@modularity.com</span>
+                <div class="content">
+                <h2 class="contact">Contact us</h2>
+                <div class="address">
+                    <span class="address-title">Corporate headquarters</span>
+                    <div class="address-data">27 Merry Lane NP000126854<br>
+                            New Jersey, East Hanover, 07936</div>
+                    <div class="cont">
+                        <span class="cont-title">Phone: </span><span>123456789</span><br>
+                        <span class="cont-title">Email: </span><span>hello@modularity.com</span>
+                    </div>
                 </div>
-            </div>
-            <h3 class="form-title">Get in Touch</h3>
-            <span>Please fill out the form</span>
-            <div class="contact-form">
-                <input type="text" id="name" name="name" value="Name">
-                <input type="email" id="email" name="email" value="*Your e-mail address">
-                <textarea id="text-area" rows="4" cols="50"></textarea>
-                <input type="submit" value="Submit"> 
+                <h3 class="form-title">Get in Touch</h3>
+                <span>Please fill out the form</span>
+                <div class="contact-form">
+                    <input type="text" id="name" name="name" value="Name">
+                    <input type="email" id="email" name="email" value="*Your e-mail address">
+                    <textarea id="text-area" rows="4" cols="50"></textarea>
+                    <button>Submit</button>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="wrapper">
-        <footer>
-            <a href="#" class="logo"><img src="/images/logo.svg"></a>
-                <a href="#one">Point One</a>
-                <a href="#two">Point Two</a>
-                <a href="#three">Point Three</a>
-                <a href="#four">Point Four</a>
-                <a href="#five">Point Five</a>
-            <div class="copyright">© 2019 COMPANY. All rights reserved.</div>
-            <div class="social">
-                <a href="http://facebook.com"><img src="images/fb.png"></a>
-                <a href="http://linkedin.com"><img src="images/in.png"></a>
+        <footer> <!-- FOOTER -->
+            <div class="metadata">
+                <a href="#" class="logo"><img src="/images/logo.svg"></a>
+                    <a href="#one">Point One</a>
+                    <a href="#two">Point Two</a>
+                    <a href="#three">Point Three</a>
+                    <a href="#four">Point Four</a>
+                    <a href="#five">Point Five</a>
+                <div class="copyright">© 2019 COMPANY. All rights reserved.</div>
+                <div class="social">
+                    <a href="http://facebook.com"><img src="images/fb.png"></a>
+                    <a href="http://linkedin.com"><img src="images/in.png"></a>
+                </div>
             </div>
         </footer>
     </div> <!-- wrapper -->

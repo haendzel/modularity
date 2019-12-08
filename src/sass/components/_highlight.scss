@@ -1,0 +1,10 @@
+.highlight-group { margin-top: 6rem; display: flex; width: 70%;
+    .text { position: relative;
+        &::after { content: ""; position: absolute; width: 3.2rem; border-top: 8px solid #fff; }
+    }
+    .highlight { }
+}
+
+.short-desc { margin-top: 1rem; 
+    &--text { margin-top: 5rem; }
+}
