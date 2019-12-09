@@ -2,7 +2,7 @@
   "name": "modularity",
   "version": "1.0.0",
   "description": "Modularity web app",
-  "main": "index.html",
+  "main": "index.php",
   "scripts": {
     "start": "gulp dev",
     "watch": "gulp watch",
