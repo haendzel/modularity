@@ -96,6 +96,8 @@ function watchFiles() {
     watch(config.app.fonts, series(fontTask, reload));
     watch(config.app.images, series(imagesTask, reload));
     watch(config.app.html, series(templateTask, reload));
+    watch(config.app.php, series(phpTask, reload));
+    watch(config.app.css, series(styleTask, reload));gi
 }
 
 function liveReload(done) {
