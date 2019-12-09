@@ -17,8 +17,6 @@
     </div> <!-- wrapper -->
 
 </div> <!-- container-->
-
-<script src="js/main.min.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -3,12 +3,12 @@ const browserSync = require('browser-sync').create();
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const rename = require('gulp-rename');
+//const rename = require('gulp-rename');
 const del = require('del');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
+//const cssnano = require('cssnano');
 const pixrem = require('gulp-pixrem');
 
 const config = {
@@ -26,7 +26,6 @@ const config = {
     dist: {
         base: './',
         js: './js',
-        css: './css/',
         fonts: './fonts',
         images: './images'
     },
@@ -54,9 +53,9 @@ function cssTask(done) {
             rootValue: '10px',
             replace: true
           }))
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(postcss([autoprefixer(), cssnano()]))
-        .pipe(dest(config.dist.css))
+        .pipe(concat('style.css'))
+        .pipe(postcss([autoprefixer()]))
+        .pipe(dest(config.dist.base))
     done();
 }
 
@@ -84,12 +83,6 @@ function phpTask(done) {
     done();
 }
 
-function styleTask(done) {
-    src(config.app.css)
-        .pipe(dest(config.dist.base))
-    done();
-}
-
 function watchFiles() {
     watch(config.app.js, series(jsTask, reload));
     watch(config.app.scss, series(cssTask, reload));
@@ -97,7 +90,6 @@ function watchFiles() {
     watch(config.app.images, series(imagesTask, reload));
     watch(config.app.html, series(templateTask, reload));
     watch(config.app.php, series(phpTask, reload));
-    watch(config.app.css, series(styleTask, reload));
 }
 
 function liveReload(done) {
@@ -118,5 +110,5 @@ function cleanUp() {
     return del([config.dist.base]);
 }
 
-exports.dev = parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, phpTask, watchFiles, styleTask, liveReload);
-exports.build = series(cleanUp, parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, styleTask, phpTask));
+exports.dev = parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, phpTask, watchFiles, liveReload);
+exports.build = series(cleanUp, parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, phpTask));
