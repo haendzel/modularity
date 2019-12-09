@@ -20,15 +20,14 @@ const config = {
         fonts: './src/fonts/*',
         images: './src/images/*.*',
         html: './src/*.html',
-        php: './src/*.php',
         css: './src/*.css'
     },
     dist: {
-        base: './',
-        js: './js',
-        css: './css/',
-        fonts: './fonts',
-        images: './images'
+        base: './dist/',
+        js: './dist/js',
+        css: './dist/css/',
+        fonts: './dist/fonts',
+        images: './dist/images'
     },
     extraBundles: [
         './main.js',
@@ -78,12 +77,6 @@ function templateTask(done) {
     done();
 }
 
-function phpTask(done) {
-    src(config.app.php)
-        .pipe(dest(config.dist.base))
-    done();
-}
-
 function styleTask(done) {
     src(config.app.css)
         .pipe(dest(config.dist.base))
@@ -116,5 +109,5 @@ function cleanUp() {
     return del([config.dist.base]);
 }
 
-exports.dev = parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, phpTask, watchFiles, styleTask, liveReload);
-exports.build = series(cleanUp, parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, styleTask, phpTask));
+exports.dev = parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, watchFiles, styleTask, liveReload);
+exports.build = series(cleanUp, parallel(jsTask, cssTask, fontTask, imagesTask, templateTask, styleTask));
