@@ -72,6 +72,10 @@ Author: Filip Handzel
 Version: 1.0
 */
 @import url(https://fonts.googleapis.com/css?family=Lato);
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -520,7 +524,7 @@ footer a:hover {
 #two {
   position: relative;
   height: 800px;
-  background: url(../../images/watch.png) no-repeat;
+  background-repeat: no-repeat;
 }
 
 #two .link img, #two .link svg {
@@ -659,7 +663,7 @@ footer a:hover {
   font-weight: 100;
   line-height: 24px;
   position: relative;
-  background: url(../../images/map-test.png) no-repeat;
+  background-repeat: no-repeat;
   height: 800px;
 }
 

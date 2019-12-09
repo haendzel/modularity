@@ -15,23 +15,24 @@
                         </div>
                         <div class="content-btns">
                             <button class="is-active" onclick="location.href='#product';">main cta</button>
-                            <button onclick="location.href='#two';">second cta</button>
+                            <button onclick="location.href='#two';" >second cta</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="content-photo">
-                    <img src="images/bike.png">
+                    <img src="<?php echo get_theme_file_uri('images/bike.png')?>">
                 </div>
             </div>
         </section>
 
-    <section id="two"> <!-- SECTION TWO -->
+        <!-- SECTION TWO -->
+    <section id="two" style="background-image: url(<?php echo get_theme_file_uri('/images/watch.png')?>);"> 
         <div class="content">
             <div class="info">
                 <h3 class="subtitle">inmarketing</h3>
                 <h2 class="title">Product is an object made available for consumer use</h2>
-                <div class="link"><a href="#partners"><img src="/images/arrow-down.svg">Explore</a></div>
+                <div class="link"><a href="#partners" data-scroll><img src="<?php echo get_theme_file_uri('/images/arrow-down.svg')?>">Explore</a></div>
             </div>
         </div>
     </section>
@@ -41,14 +42,14 @@
                 <div class="content">
                     <h1 class="title">Our partners</h1>
                     <div class="partners">
-                        <div class="slot"><img src="images/amazon.svg"></div>
-                        <div class="slot"><img src="images/visa.svg"></div>
-                        <div class="slot"><img src="images/paypal.svg"></div>
-                        <div class="slot"><img src="images/applepay.svg"></div>
-                        <div class="slot"><img src="images/transferwise.svg"></div>
-                        <div class="slot"><img src="images/payoneer.svg"></div>
-                        <div class="slot"><img src="images/skrill.svg"></div>
-                        <div class="slot"><img src="images/stripe.svg"></div>
+                        <div class="slot"><img src="<?php echo get_theme_file_uri('images/amazon.svg')?>"></div>
+                        <div class="slot"><img src="<?php echo get_theme_file_uri('images/visa.svg')?>"></div>
+                        <div class="slot"><img src="<?php echo get_theme_file_uri('images/paypal.svg')?>"></div>
+                        <div class="slot"><img src="<?php echo get_theme_file_uri('images/applepay.svg')?>"></div>
+                        <div class="slot"><img src="<?php echo get_theme_file_uri('images/transferwise.svg')?>"></div>
+                        <div class="slot"><img src="<?php echo get_theme_file_uri('images/payoneer.svg')?>"></div>
+                        <div class="slot"><img src="<?php echo get_theme_file_uri('images/skrill.svg')?>"></div>
+                        <div class="slot"><img src="<?php echo get_theme_file_uri('images/stripe.svg')?>"></div>
                     </div>
                 </div>
             </div> <!-- wrapper -->
@@ -65,17 +66,17 @@
                             </div>
                             <div class="highlight-group">
                                 <div class="highlight">
-                                    <img class="icon" src="images/watch-icon.svg">
+                                    <img class="icon" src="<?php echo get_theme_file_uri('images/watch-icon.svg')?>">
                                     <div class="short-desc">Your advantages help clients to make their decision</div>
                                 </div>
                                 <div class="highlight">
-                                    <img class="icon" src="images/coffee-icon.svg">
+                                    <img class="icon" src="<?php echo get_theme_file_uri('images/coffee-icon.svg')?>">
                                     <div class="short-desc">Your advantages help clients to make their decision</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="content-photo"><img src="images/bike-feature1.png"></div>
+                    <div class="content-photo"><img src="<?php echo get_theme_file_uri('images/bike-feature1.png')?>"></div>
                 </article>
 
                 <article>
@@ -98,7 +99,7 @@
                             </div>
                         </div>
                 </div>
-                <div class="content-photo"><img src="images/bike-feature2.png"></div>
+                <div class="content-photo"><img src="<?php echo get_theme_file_uri('images/bike-feature2.png')?>"></div>
                 </article>
                 
                 <article>
@@ -117,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="content-photo"><img src="images/bike-feature3.png"></div>
+                <div class="content-photo"><img src="<?php echo get_theme_file_uri('images/bike-feature3.png')?>"></div>
                 </article>
         </section>
 
@@ -133,7 +134,7 @@
 
                 <article class="person">
                     <div class="user-photo">
-                        <img src="images/person1.png">
+                        <img src="<?php echo get_theme_file_uri('images/person1.png')?>">
                     </div>
                     <div class="user-info">
                         <h2>John Smith</h2>
@@ -151,7 +152,7 @@
 
                 <article class="person">
                     <div class="user-photo">
-                        <img src="images/person2.png">
+                        <img src="<?php echo get_theme_file_uri('images/person2.png')?>">
                     </div>
                     <div class="user-info">
                         <h2>Natalie Fischer</h2>
@@ -193,11 +194,12 @@
             </div>
             </div> <!-- wrapper -->
             <div class="content-photo">
-                <img src="images/building.png">
+                <img src="<?php echo get_theme_file_uri('images/building.png')?>">
             </div>
         </section>
 
-    <section id="contact"> <!-- SECTION CONTACT -->
+    <section id="contact" style="background-image: url(<?php echo get_theme_file_uri('images/map-test.png')?>"> 
+    <!-- SECTION CONTACT -->
         <div class="form">
                 <div class="content">
                 <h2 class="contact">Contact us</h2>

@@ -12,13 +12,13 @@
 <div class="container">
     
     <header> <!-- HEADER NAV -->
-        <a href="#" class="logo"><img src="/images/logo.svg"></a>
-            <ul>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#partners">Partners</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <a href="#" class="logo"><img src="<?php echo get_theme_file_uri('/images/logo.svg')?>"></a>
+        <ul data-scroll-header>
+            <li><a data-scroll href="#product">Product</a></li>
+            <li><a data-scroll href="#partners">Partners</a></li>
+            <li><a data-scroll href="#features">Features</a></li>
+            <li><a data-scroll href="#team">Team</a></li>
+            <li><a data-scroll href="#about">About us</a></li>
+            <li><a data-scroll href="#contact">Contact</a></li>
+        </ul>
     </header>
