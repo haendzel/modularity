@@ -56,30 +56,25 @@
         </section>
 <?php endif; ?>
 
+<?php $rows = get_field('section_5'); if ($rows): ?>
         <section id="features"> <!-- SECTION FEATURES -->
+            <?php foreach ($rows as $i => $row): ?> 
                 <article>
                     <div class="content">
                         <div class="info">
-                            <h3 class="subtitle">feature one</h3>
-                            <h1 class="title">Functional parameters</h1>
-                            <div class="desc">Parameters that are essential to the respective service and that describe 
-                                the important dimension(s) of the servicescape, the service output or the service outcome.
-                            </div>
+                            <h3 class="subtitle"><?php echo $row['subtittle'];?></h3>
+                            <h1 class="title"><?php echo $row['headline'];?></h1>
+                            <div class="desc"><?php echo $row['content'];?></div>
                             <div class="highlight-group">
-                                <div class="highlight">
-                                    <img class="icon" src="<?php echo get_theme_file_uri('images/watch-icon.svg')?>">
-                                    <div class="short-desc">Your advantages help clients to make their decision</div>
-                                </div>
-                                <div class="highlight">
-                                    <img class="icon" src="<?php echo get_theme_file_uri('images/coffee-icon.svg')?>">
-                                    <div class="short-desc">Your advantages help clients to make their decision</div>
-                                </div>
+                                <?php echo $row['highlight']; ?>
                             </div>
                         </div>
                     </div>
-                    <div class="content-photo"><img src="<?php echo get_theme_file_uri('images/bike-feature1.png')?>"></div>
+                    <div class="content-photo"><img src="<?php echo $row['photo'];?>"></div>
                 </article>
-        </section>
+            <?php endforeach; ?>
+        </section> 
+<?php endif; ?> 
 
         <section id="team"> <!--- SECTION TEAM -->
             <div class="wrapper">
