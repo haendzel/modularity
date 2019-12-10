@@ -20,7 +20,8 @@ const config = {
         fonts: './src/fonts/*',
         images: './src/images/*.*',
         html: './src/*.html',
-        css: './src/*.css'
+        css: './src/*.css',
+        php: './src/*.php'
     },
     dist: {
         base: './',

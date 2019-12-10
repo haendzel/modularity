@@ -14,19 +14,19 @@ function modularity_features() {
 }
 add_action('after_setup_theme', 'modularity_features');
 
-function modularity_post_types() {
-    register_post_type('event', array(
-    'support' => array('title', 'editor'),
-    'public' => true, 
-    'labels' => array(
-        'name' => 'Landing Pages',
-        'add_new_item' => 'Add New Page',
-        'edit_item' => 'Edit Page',
-        'all_items' => 'All Pages',
-        'singular_name' => 'Land Page'
-    ),
-    'menu_icon' => 'dashicons-welcome-view-site'
-    ));
-}
-    add_action('init', 'modularity_post_types');
+//function modularity_post_types() {
+//    register_post_type('event', array(
+//    'support' => array('title', 'editor'),
+//    'public' => true, 
+//    'labels' => array(
+//        'name' => 'Landing Pages',
+//        'add_new_item' => 'Add New Page',
+//        'edit_item' => 'Edit Page',
+//        'all_items' => 'All Pages',
+//        'singular_name' => 'Land Page'
+//    ),
+//    'menu_icon' => 'dashicons-welcome-view-site'
+//    ));
+//}
+//    add_action('init', 'modularity_post_types');
 ?>
