@@ -1,3 +1,3 @@
 # modularity
 
-Web app builed for CMS Wordpress.
+Web app built with ACF for CMS Wordpress.
