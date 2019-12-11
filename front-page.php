@@ -2,8 +2,9 @@
 
 <?php get_header(); ?>
 
+<!-- SECTION ONE -->
 <?php $row = get_field('section_1'); if ($row): ?>
-<section id="product"> <!-- SECTION ONE -->
+<section id="section-one"> 
     <div class="wrapper">
         <div class="content">
             <div class="info">
@@ -25,7 +26,7 @@
 
 <!-- SECTION TWO -->
 <?php $row = get_field('section_2'); if ($row): ?>
-    <section id="two" style="background-image: url(<?php echo $row['image']; ?>);"> 
+    <section id="section-two" style="background-image: url(<?php echo $row['image']; ?>);"> 
         <div class="content">
             <div class="info">
                 <h3 class="subtitle"><?php echo $row['subtitle']; ?></h3>
@@ -36,10 +37,10 @@
     </section>
 <?php endif; ?>
 
-<!-- SECTION PARTNERS -->
+<!-- SECTION THREE -->
 <?php $rows = get_field('section_3'); if ($rows): foreach($rows as $i => $row): ?>
     <div class="wrapper">
-            <section id="partners"> 
+            <section id="section-three"> 
                 <div class="content">
                     <h1 class="title"><?php echo $row['headline']; ?></h1>
                     <?php $images = $row['repeater_images']; if ($images): ?>
@@ -54,8 +55,9 @@
         </section>
 <?php endforeach; endif; ?>
 
+<!-- SECTION FOUR-->
 <?php $rows = get_field('section_5'); if ($rows): ?>
-        <section id="features"> <!-- SECTION FEATURES -->
+        <section id="section-four">
             <?php foreach ($rows as $i => $row): ?> 
                 <article>
                     <div class="content">
@@ -74,14 +76,15 @@
         </section> 
 <?php endif; ?> 
 
-        <section id="team"> <!--- SECTION TEAM -->
+<!--- SECTION FIVE -->
+        <section id="section-five"> 
             <div class="wrapper">
                 <div class="content">
+                    
                     <div class="info">
-                        <h2 class="subtitle">Team is a group of people who are interdependent with
-                        respect to information, resources, and skills and who seek to combine their 
-                        efforts to achieve a common goal.</h2>
+                        <h2 class="subtitle"><?php echo get_field('description_above'); ?></h2>
                     </div>
+                    
                 </div>
 
                 <?php $rows = get_field('section_4'); if ($rows): foreach($rows as $i => $row): ?>
@@ -100,8 +103,10 @@
             </div> <!-- wrapper -->
         </section>
 
+
+<!--- SECTION DESCRIPTION -->
     <?php $row = get_field('description'); if ($row): ?>
-        <section id="about"> <!--- SECTION ABOUT -->
+        <section id="section-description">
             <div class="wrapper">
                 <div class="aboutus">
                     <div class="content">
@@ -122,16 +127,15 @@
         </section>
     <?php endif; ?>
 
-        
 
 <!-- SECTION CONTACT -->
 <?php $row = get_field('contact'); if ($row): ?>
-  <section id="contact" style="background-image: url(<?php echo get_theme_file_uri('images/map-test.png')?>"> 
+  <section id="section-contact" style="background-image: url(<?php echo get_theme_file_uri('images/map-test.png')?>"> 
         <div class="form">
                 <div class="content">
                 <h2 class="contact"><?php echo $row['title']; ?></h2>
                 <div class="address">
-                    <span class="address-title">Corporate headquarters</span>
+                    <span class="address-title"><?php echo $row['address_title']; ?></span>
                     <div class="address-data"><?php echo $row['address']; ?></div>
                     <div class="cont">
                         <span class="cont-title">Phone: </span><span><?php echo $row['phone']; ?></span><br>
@@ -139,12 +143,12 @@
                     </div>
                 </div>
                 <h3 class="form-title"><?php echo $row['second_title']; ?></h3>
-                <span>Please fill out the form</span>
+                <span><?php echo $row['text']; ?></span>
                 <div class="contact-form">
                     <input type="text" id="name" name="name" value="Name">
                     <input type="email" id="email" name="email" value="*Your e-mail address">
                     <textarea id="text-area" rows="4" cols="50"></textarea>
-                    <button>Submit</button>
+                    <button><?php echo $row['button']; ?></button>
                 </div>
             </div>
         </div>

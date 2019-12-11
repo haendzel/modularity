@@ -41,13 +41,13 @@ Version: 1.0
 
 /* SECTIONS */
 @import 
-    'sections/product',
-    'sections/two',
-    'sections/partners',
-    'sections/features',
-    'sections/team',
-    'sections/about',
-    'sections/contact';
+    'sections/section-one', // product
+    'sections/section-two', //two
+    'sections/section-three', //partners
+    'sections/section-four', //features
+    'sections/section-five', //team
+    'sections/section-description', //about
+    'sections/section-contact'; //contact
 
 /* VENDORS */
 //nothing
