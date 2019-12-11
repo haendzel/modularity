@@ -128,6 +128,13 @@ h1 {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+  }
+}
+
 h2 {
   font-size: 32px;
   line-height: 32px;
@@ -283,6 +290,13 @@ button {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
 button:hover, button:active, button.is-active {
   background-color: #fff;
   color: black;
@@ -402,12 +416,29 @@ iframe {
   -ms-flex-align: center;
       align-items: center;
   width: 50%;
-  float: left;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    width: 100%;
+  }
 }
 
 .content-photo {
   width: 50%;
-  float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .content-photo {
+    margin-top: 5.6rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content-photo img {
+    width: 100vw;
+    height: auto;
+  }
 }
 
 .slot {
@@ -488,6 +519,12 @@ section .desc {
   padding-right: 160px;
 }
 
+@media screen and (max-width: 767px) {
+  section .desc {
+    padding: 0;
+  }
+}
+
 article {
   display: -ms-flexbox;
   display: flex;
@@ -534,8 +571,28 @@ footer a:hover {
   height: 800px;
 }
 
+@media screen and (max-width: 767px) {
+  #section-one {
+    padding: 0;
+    min-height: 80rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #section-one article {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+  }
+}
+
 #section-one .info {
   padding-top: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  #section-one .info {
+    padding: 2.4rem;
+  }
 }
 
 #section-two {

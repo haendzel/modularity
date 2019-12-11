@@ -1,3 +1,9 @@
 #section-one { padding-top: 10rem; width: 100%; height: 80rem; 
-    .info { padding-top: 15rem; }
+    @include bp(phablet) { padding: 0; min-height: 80rem; }
+    article { 
+        @include bp(phablet) { flex-direction: column-reverse; }
+    }
+    .info { padding-top: 15rem; 
+        @include bp(phablet) { padding: 2.4rem; }
+    }
 }

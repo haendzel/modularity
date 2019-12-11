@@ -6,20 +6,22 @@
 <?php $row = get_field('section_1'); if ($row): ?>
 <section id="section-one"> 
     <div class="wrapper">
-        <div class="content">
-            <div class="info">
-                <h3 class="subtitle"><?php echo $row['subtitle']; ?></h3>
-                <h1 class="title"><?php echo $row['headline']; ?></h1>
-                    <div class="desc"><?php echo $row['content_wysiwyg']; ?></div>
-                    <div class="content-btns">
-                        <button class='is-active' onclick="location.href='<?php echo $row['url_1']; ?>"><?php echo $row['type_1'];?></button>
-                        <button onclick="location.href='<?php echo $row['url_2']; ?>"><?php echo $row['type_2'];?></button>
-                    </div>
+        <article>
+            <div class="content">
+                <div class="info">
+                    <h3 class="subtitle"><?php echo $row['subtitle']; ?></h3>
+                    <h1 class="title"><?php echo $row['headline']; ?></h1>
+                        <div class="desc"><?php echo $row['content_wysiwyg']; ?></div>
+                        <div class="content-btns">
+                            <button class='is-active' onclick="location.href='<?php echo $row['url_1']; ?>"><?php echo $row['type_1'];?></button>
+                            <button onclick="location.href='<?php echo $row['url_2']; ?>"><?php echo $row['type_2'];?></button>
+                        </div>
+                </div>
             </div>
-        </div>
-        <div class="content-photo">
-            <img src="<?php echo $row['image']; ?>">
-        </div>
+            <div class="content-photo">
+                <img src="<?php echo $row['image']; ?>">
+            </div>
+        </article>
     </div>
 </section>
 <?php endif; ?>
