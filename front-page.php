@@ -11,9 +11,8 @@
                 <h1 class="title"><?php echo $row['headline']; ?></h1>
                     <div class="desc"><?php echo $row['content_wysiwyg']; ?></div>
                     <div class="content-btns">
-                    <?php $button = get_field('repeater_buttons'); if ($button): ?>
-                        <button onclick="location.href='<?php echo get_sub_field('url'); ?>"><?php echo get_sub_field('btn');?></button>
-                    <?php endif; ?>
+                        <button class='is-active' onclick="location.href='<?php echo $row['url_1']; ?>"><?php echo $row['type_1'];?></button>
+                        <button onclick="location.href='<?php echo $row['url_2']; ?>"><?php echo $row['type_2'];?></button>
                     </div>
             </div>
         </div>
@@ -38,23 +37,22 @@
 <?php endif; ?>
 
 <!-- SECTION PARTNERS -->
-<?php $row = get_field('section_3'); if ($row): ?>
+<?php $rows = get_field('section_3'); if ($rows): foreach($rows as $i => $row): ?>
     <div class="wrapper">
             <section id="partners"> 
                 <div class="content">
                     <h1 class="title"><?php echo $row['headline']; ?></h1>
-                    <?php $images = get_field('repeater_images'); if ($images): ?>
-                    <?php var_dump($images); ?>
+                    <?php $images = $row['repeater_images']; if ($images): ?>
                     <div class="partners">
-                        <?php foreach ($images as $i => $image): ?>
-                            <div class="slot"><img src="<?php echo $image['image']; ?>" /></div>
+                        <?php foreach ($images as $i => $img): ?>
+                            <div class="slot"><img src="<?php echo $img['image']; ?>" /></div>
                         <?php endforeach; ?>
                     </div>
                     <?php endif; ?>
                 </div>
             </div> <!-- wrapper -->
         </section>
-<?php endif; ?>
+<?php endforeach; endif; ?>
 
 <?php $rows = get_field('section_5'); if ($rows): ?>
         <section id="features"> <!-- SECTION FEATURES -->

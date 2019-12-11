@@ -12,7 +12,7 @@
 <div class="container">
     
     <header> <!-- HEADER NAV -->
-        <a href="#" class="logo"><img src="<?php echo get_theme_file_uri('/images/logo.svg')?>"></a>
+        <a href="#" class="logo"><img src="<?php echo get_field('logo_nav'); ?>"></a>
         <ul data-scroll-header>
             <li><a data-scroll href="#product">Product</a></li>
             <li><a data-scroll href="#partners">Partners</a></li>
