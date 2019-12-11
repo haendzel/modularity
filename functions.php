@@ -14,6 +14,11 @@ function modularity_features() {
 }
 add_action('after_setup_theme', 'modularity_features');
 
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'hello');
+}
+add_action('acf/init', 'my_acf_init');
+
 //function modularity_post_types() {
 //    register_post_type('event', array(
 //    'support' => array('title', 'editor'),

@@ -31,7 +31,7 @@
             <div class="info">
                 <h3 class="subtitle"><?php echo $row['subtitle']; ?></h3>
                 <h2 class="title"><?php echo $row['headline']; ?></h2>
-                <div class="link"><a href="#partners" data-scroll><img src="<?php echo get_theme_file_uri('/images/arrow-down.svg')?>"><?php echo $row['content_wysiwyg']; ?></a></div>
+                <div class="link"><a href="#section-three" data-scroll><img src="<?php echo get_theme_file_uri('/images/arrow-down.svg')?>"><?php echo $row['content_wysiwyg']; ?></a></div>
             </div>
         </div>
     </section>
@@ -51,7 +51,7 @@
                     </div>
                     <?php endif; ?>
                 </div>
-            </div> <!-- wrapper -->
+            </div> 
         </section>
 <?php endforeach; endif; ?>
 
@@ -100,7 +100,7 @@
                 </article>
                 <?php endforeach; endif; ?>
 
-            </div> <!-- wrapper -->
+            </div> 
         </section>
 
 
@@ -120,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            </div> <!-- wrapper -->
+            </div> 
             <div class="content-photo">
                 <img src="<?php echo get_field('background_image');?>">
             </div>
@@ -130,7 +130,14 @@
 
 <!-- SECTION CONTACT -->
 <?php $row = get_field('contact'); if ($row): ?>
-  <section id="section-contact" style="background-image: url(<?php echo get_theme_file_uri('images/map-test.png')?>"> 
+  <section id="section-contact"> 
+
+    <?php $location = get_field('map'); if( $location ): ?>
+        <div class="acf-map" data-zoom="16">
+            <div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
+        </div>
+    <?php endif; ?>
+
         <div class="form">
                 <div class="content">
                 <h2 class="contact"><?php echo $row['title']; ?></h2>

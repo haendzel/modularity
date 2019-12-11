@@ -2,11 +2,12 @@
         <footer> <!-- FOOTER -->
             <div class="metadata">
                 <a data-scroll href="#" class="logo"><img src="<?php echo get_field('logo_ft'); ?>"></a>
-                    <a data-scroll href="#one">Point One</a>
-                    <a data-scroll href="#two">Point Two</a>
-                    <a data-scroll href="#three">Point Three</a>
-                    <a data-scroll href="#four">Point Four</a>
-                    <a data-scroll href="#five">Point Five</a> 
+                <a data-scroll href="#section-one">Product</a>
+                <a data-scroll href="#section-three">Partners</a>
+                <a data-scroll href="#section-four">Features</a>
+                <a data-scroll href="#section-five">Team</a>
+                <a data-scroll href="#section-description">About us</a>
+                <a data-scroll href="#section-contact">Contact</a>
                 <div class="copyright"><?php echo get_field('copyright'); ?></div>
 
                 <?php $rows = get_field('social_media'); if ($rows): ?>
