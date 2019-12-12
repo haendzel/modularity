@@ -2,7 +2,7 @@
     @include bp(phablet) { width: 100%; }
     &-photo { width: 50%; 
         @include bp(phablet) { margin-top: 5.6rem; }
-        img { @include bp(phablet) { width: 100vw; height: auto; }
+        img { @include bp(phablet) { width: 100vw; height: 375px; }
         }
     } 
 }

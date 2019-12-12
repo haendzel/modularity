@@ -141,6 +141,13 @@ h2 {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+}
+
 .contact {
   font-size: 40px;
 }
@@ -437,7 +444,7 @@ iframe {
 @media screen and (max-width: 767px) {
   .content-photo img {
     width: 100vw;
-    height: auto;
+    height: 375px;
   }
 }
 
@@ -599,6 +606,8 @@ footer a:hover {
   position: relative;
   height: 800px;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 #section-two .link img, #section-two .link svg {
