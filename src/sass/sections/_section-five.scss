@@ -1,7 +1,13 @@
 #section-five { min-height: 157.5rem; 
-    .content { width: 100%; padding: 10rem; padding-left: 0; }
-    .subtitle { padding-right: 16rem; }
+    .content { width: 100%; padding: 10rem; padding-left: 0; 
+        @include bp(phablet) { padding: 0; }
+    }
+    .subtitle { padding-right: 16rem; 
+        @include bp(phablet) { padding-right: 0; }
+    }
     article { padding-bottom: 7.5rem;
-        &:nth-child(odd) { flex-direction: row-reverse; }
+        @include bp(phablet) { padding-bottom: 4rem; }
+        &:nth-child(odd) { flex-direction: row-reverse; 
+            @include bp(phablet) { flex-direction: column; }}
     }
 }

@@ -1,4 +1,10 @@
-.person {
+.person { 
+    @include bp(phablet) { flex-direction: column; }
     .user-photo {}
-    .user-info { padding: 10rem; padding-right: 0; }
+    .user-info { padding: 10rem; padding-right: 0; 
+        @include bp(phablet) { padding: 0; padding-right: 0; }
+    }
+    img { 
+        @include bp(phablet) { max-width: 100%; }
+    }
 }
