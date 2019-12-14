@@ -527,6 +527,12 @@ header img {
   height: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  header img {
+    height: 20%;
+  }
+}
+
 .logo {
   padding-top: 39px;
 }
@@ -602,6 +608,14 @@ footer .metadata {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  footer .metadata {
+    line-height: 24px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 footer .logo {
   padding: 0;
 }
@@ -610,6 +624,12 @@ footer a {
   font-size: 16px;
   text-transform: none;
   padding-right: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  footer a {
+    text-decoration: underline;
+  }
 }
 
 footer a:hover {

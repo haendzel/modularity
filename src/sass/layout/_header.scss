@@ -1,5 +1,7 @@
 header { display: flex; justify-content: space-around; position: fixed; width: 100%; padding: 0; height: 10rem; background-color: black; z-index: $z_index_over_all;
-    img { width: 19.5rem; height: 1.6rem; }
+    img { width: 19.5rem; height: 1.6rem; 
+    @include bp(phablet) { height: 20%; }
+  }
 }
 
 .logo { padding-top: 3.9rem; }
