@@ -1,7 +1,9 @@
-#section-two { position: relative; height: 80rem; background-repeat: no-repeat; background-size: contain; background-position: center;
+#section-two { position: relative; height: 80rem; background-repeat: no-repeat; background-size: cover; background-position: center;
     .link {
         img, svg { margin-right: 1rem; }
         a { line-height: 1.2rem; }
     } 
-    .info { width: 25%; position: absolute; left: 16rem; bottom: 6rem; }
+    .info { width: 25%; position: absolute; left: 16rem; bottom: 6rem; 
+    @include bp(phablet) { width: 50%; left: 2.4rem; bottom: 0; }
+}
 }

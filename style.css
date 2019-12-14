@@ -114,7 +114,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .wrapper {
-    padding: 0;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
   }
 }
 
@@ -130,21 +131,21 @@ h1 {
 
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 2.6rem;
-    line-height: 3.5rem;
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 
 h2 {
   font-size: 32px;
-  line-height: 32px;
+  line-height: 40px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
   h2 {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -453,6 +454,12 @@ iframe {
   border: 1px solid #3F3F3F;
 }
 
+@media screen and (max-width: 767px) {
+  .slot {
+    height: 120px !important;
+  }
+}
+
 .social a {
   padding: 5px;
 }
@@ -598,7 +605,7 @@ footer a:hover {
 
 @media screen and (max-width: 767px) {
   #section-one .info {
-    padding: 2.4rem;
+    padding-top: 0;
   }
 }
 
@@ -606,7 +613,7 @@ footer a:hover {
   position: relative;
   height: 800px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -623,6 +630,14 @@ footer a:hover {
   position: absolute;
   left: 160px;
   bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  #section-two .info {
+    width: 50%;
+    left: 2.4rem;
+    bottom: 0;
+  }
 }
 
 #section-three {
@@ -648,6 +663,18 @@ footer a:hover {
   text-align: center;
   vertical-align: middle;
   line-height: 165px;
+}
+
+@media screen and (max-width: 767px) {
+  #section-three .slot {
+    -ms-flex: 1 1 33%;
+        flex: 1 1 33%;
+    line-height: 120px;
+  }
+}
+
+#section-three .slot img {
+  height: 25px;
 }
 
 #section-four {

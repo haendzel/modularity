@@ -4,6 +4,6 @@
         @include bp(phablet) { flex-direction: column-reverse; }
     }
     .info { padding-top: 15rem; 
-        @include bp(phablet) { padding: 2.4rem; }
+        @include bp(phablet) { padding-top: 0; }
     }
 }

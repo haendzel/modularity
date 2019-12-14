@@ -1,1 +1,3 @@
-.slot { height: 13.6rem; border: 1px solid #3F3F3F; }
+.slot { height: 13.6rem; border: 1px solid #3F3F3F; 
+    @include bp(phablet) { height: 120px !important; }
+}
