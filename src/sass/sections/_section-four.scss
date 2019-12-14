@@ -1,8 +1,11 @@
-#section-four { height: 192rem; margin-bottom: 1rem;
+#section-four { min-height: 192rem; margin-bottom: 1rem;
     .content { width: 100%; }
     article { 
-        &:nth-child(even) { flex-direction: row-reverse;}
+        &:nth-child(even) { flex-direction: row-reverse; 
+            @include bp(phablet) { flex-direction: column-reverse; }
+        }
         .content { padding-left: 16rem; 
+            @include bp(phablet) { padding-left: 2.4rem; padding-right: 2.4rem; }
             &:nth-child(even) { padding-left: 5rem; padding-right: 16rem; }
         }
     }

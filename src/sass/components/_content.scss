@@ -1,7 +1,7 @@
 .content { align-items: center; width: 50%; 
     @include bp(phablet) { width: 100%; }
     &-photo { width: 50%; 
-        @include bp(phablet) { margin-top: 5.6rem; }
+        @include bp(phablet) { margin-top: 2rem; }
         img { @include bp(phablet) { width: 100vw; height: 375px; }
         }
     } 

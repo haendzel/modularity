@@ -1,1 +1,3 @@
-.info { padding-top: 9rem; }
+.info { padding-top: 9rem; 
+    @include bp(phablet) { padding-top: 0;}
+}
