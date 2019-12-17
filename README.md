@@ -6,4 +6,4 @@ There is [ACF Pro Export JSON](acf-landing-page.json) with Repeaters, Groups and
 
 ![Screenshot](screenshot.png)
 
-_Demo is coming._
+_Work in progress. Demo is coming._
