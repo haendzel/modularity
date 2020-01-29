@@ -12,7 +12,7 @@ Work in progress. Demo is coming. 📺
 |------------|
 | HTML |
 | CSS3/Sass |
-| Javascript |
+| Javascript ES6+ |
 | Gulp |
 | Wordpress CMS |
-| Basic PHP |
+| PHP (basics) |
