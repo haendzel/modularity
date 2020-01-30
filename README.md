@@ -17,3 +17,4 @@ Work in progress. Demo is coming. 📺
 | Wordpress CMS |
 | ACF |
 | PHP (basics) |
+| npm |
