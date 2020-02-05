@@ -13,12 +13,27 @@
     
     <header> <!-- HEADER NAV -->
         <a href="#" class="logo"><img src="<?php echo get_field('logo_nav'); ?>"></a>
+
+        <span class="burger"></span>
+        <nav class="nav-mobile">
         <ul data-scroll-header>
-            <li><a data-scroll href="#section-one">Product</a></li>
-            <li><a data-scroll href="#section-three">Partners</a></li>
-            <li><a data-scroll href="#section-four">Features</a></li>
-            <li><a data-scroll href="#section-five">Team</a></li>
-            <li><a data-scroll href="#section-description">About us</a></li>
-            <li><a data-scroll href="#section-contact">Contact</a></li>
-        </ul>
+                <li><a data-scroll href="#section-one">Product</a></li>
+                <li><a data-scroll href="#section-three">Partners</a></li>
+                <li><a data-scroll href="#section-four">Features</a></li>
+                <li><a data-scroll href="#section-five">Team</a></li>
+                <li><a data-scroll href="#section-description">About us</a></li>
+                <li><a data-scroll href="#section-contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-desktop">
+            <ul data-scroll-header>
+                <li><a data-scroll href="#section-one">Product</a></li>
+                <li><a data-scroll href="#section-three">Partners</a></li>
+                <li><a data-scroll href="#section-four">Features</a></li>
+                <li><a data-scroll href="#section-five">Team</a></li>
+                <li><a data-scroll href="#section-description">About us</a></li>
+                <li><a data-scroll href="#section-contact">Contact</a></li>
+            </ul>
+        <nav>
     </header>

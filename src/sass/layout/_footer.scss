@@ -9,5 +9,6 @@ footer { padding: 0; height: 10rem;
         @include bp(phablet) { text-decoration: underline; padding: .3rem; }
         &:hover { background-color: black; text-decoration: underline; }
     }
-    .copyright { font-size: 1.2rem; padding-top: 1rem; padding-bottom: 1.5rem;}
+    .copyright { @include bp(phablet) { font-size: 12px; padding-top: 1rem; padding-bottom: 1.5rem; } 
+    }
 }

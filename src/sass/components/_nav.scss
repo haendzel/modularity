@@ -1,0 +1,7 @@
+.nav-mobile { display: none; 
+    @include bp(phablet) { top: 5rem; position: fixed; }
+}
+
+.nav-desktop { 
+    @include bp(phablet) { display: none; }
+}

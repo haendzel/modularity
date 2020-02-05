@@ -9,7 +9,7 @@ $mobile_burger_line_height		  : 3px;
 $mobile_burger_padding		      : 2px;
 
 .burger { @include burger-squeeze; display: flex; flex-direction: column; align-items: stretch; justify-content: space-between; width: $burger_width; height: $burger_height; margin-top: 1.2rem; padding: $burger_padding; box-sizing: content-box;
-	@include bp(phablet) { width: $mobile_burger_width; height: $mobile_burger_height; margin:-$mobile_burger_padding;}
+	@include bp(phablet) { width: $mobile_burger_width; height: $mobile_burger_height; margin-top: 35px;}
 	&:before,
 	&-label,
 	&:after { height: $burger_line_height; background-color: $light_color; border-radius: 1px;

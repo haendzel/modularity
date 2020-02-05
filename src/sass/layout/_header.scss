@@ -2,15 +2,20 @@ header { display: flex; justify-content: space-around; position: fixed; width: 1
     img { width: 19.5rem; height: 1.6rem; 
     @include bp(phablet) { height: 20%; }
   }
-}
 
-.logo { padding-top: 3.9rem; }
+  .burger { display: none; 
+    @include bp(phablet) { display: flex; }
+  } 
 
-ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: black; }
+  .logo { padding-top: 3.9rem; }
+
+  ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: black; }
   
-li { float: left; text-transform: uppercase;
-  a { display: block; color: white; text-align: center; padding: 3.9rem 1.8rem; text-decoration: none;
-    &:hover { background-color: #111; 
+  li { float: left; text-transform: uppercase;
+    a { display: block; color: white; text-align: center; padding: 3.9rem 1.8rem; text-decoration: none;
+      @include bp(phablet) { padding: 11px 11px; }
+      &:hover { background-color: #111; 
+      }
     }
   }
 }
