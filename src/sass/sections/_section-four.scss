@@ -5,8 +5,9 @@
             @include bp(phablet) { flex-direction: column-reverse; }
         }
         .content { padding-left: 16rem; 
-            @include bp(phablet) { padding-left: 2.4rem; padding-right: 2.4rem; }
+            @include bp(phablet) { padding: 0; }
             &:nth-child(even) { padding-left: 5rem; padding-right: 16rem; }
+        .info { padding: 3.5rem; }
         }
     }
 }

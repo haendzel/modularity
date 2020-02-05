@@ -322,7 +322,7 @@ button:hover, button:active, button.is-active {
 
 @media screen and (max-width: 767px) {
   .info {
-    padding-top: 0;
+    padding: 0;
   }
 }
 
@@ -379,8 +379,22 @@ button:hover, button:active, button.is-active {
   background-color: black;
 }
 
+@media screen and (max-width: 767px) {
+  .form {
+    top: 4rem;
+    left: 1rem;
+    bottom: 4rem;
+    right: 1rem;
+    padding: 1rem;
+  }
+}
+
 .form button {
   padding: 10px 45px;
+}
+
+.form content {
+  width: 85%;
 }
 
 input, textarea {
@@ -393,6 +407,13 @@ input, textarea {
   color: #fff;
   font-size: 16px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  input, textarea {
+    margin-top: 5px;
+    min-width: 300px;
+  }
 }
 
 .quotes-item {
@@ -573,7 +594,7 @@ section .desc {
 
 @media screen and (max-width: 767px) {
   section .desc {
-    padding: 0;
+    padding-right: 1rem;
   }
 }
 
@@ -620,6 +641,13 @@ footer .logo {
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+  footer .logo {
+    padding: 1rem;
+    padding-left: 0;
+  }
+}
+
 footer a {
   font-size: 16px;
   text-transform: none;
@@ -629,12 +657,19 @@ footer a {
 @media screen and (max-width: 767px) {
   footer a {
     text-decoration: underline;
+    padding: .3rem;
   }
 }
 
 footer a:hover {
   background-color: black;
   text-decoration: underline;
+}
+
+footer .copyright {
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 /* SECTIONS */
@@ -647,7 +682,7 @@ footer a:hover {
 @media screen and (max-width: 767px) {
   #section-one {
     padding: 0;
-    min-height: 67rem;
+    min-height: 73rem;
   }
 }
 
@@ -765,14 +800,17 @@ footer a:hover {
 
 @media screen and (max-width: 767px) {
   #section-four article .content {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    padding: 0;
   }
 }
 
 #section-four article .content:nth-child(even) {
   padding-left: 50px;
   padding-right: 160px;
+}
+
+#section-four article .content .info {
+  padding: 35px;
 }
 
 #section-five {
@@ -916,8 +954,20 @@ footer a:hover {
   background: url(images/map-test.png) no-repeat;
 }
 
+@media screen and (max-width: 767px) {
+  #section-contact {
+    max-height: 80rem;
+  }
+}
+
 #section-contact .form .content {
   padding: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  #section-contact .form .content {
+    padding: 0;
+  }
 }
 
 #section-contact .cont {

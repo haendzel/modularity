@@ -1,5 +1,9 @@
 .form { position: absolute; left: 16rem; top: 5rem; bottom: 3rem; max-width: 40rem; background-color: black; 
+    @include bp(phablet) { top: 4rem; left: 1rem; bottom: 4rem; right: 1rem; padding: 1rem;}
     button { padding: 1rem 4.5rem; }
+    content { width: 85%; }
 }
 
-input, textarea { min-width: 34rem; border: 1px solid #3f3f3f; border-radius: .4rem; width: 27.5rem; padding: .6rem; background-color: #3f3f3f; color: #fff; font-size: 1.6rem; line-height: 2.4rem; }
+input, textarea { min-width: 34rem; border: 1px solid #3f3f3f; border-radius: .4rem; width: 27.5rem; padding: .6rem; background-color: #3f3f3f; color: #fff; font-size: 1.6rem; line-height: 2.4rem; 
+    @include bp(phablet) { margin-top: 5px; min-width: 300px; }
+}

@@ -1,16 +1,18 @@
 #section-contact { padding: 0; font-weight: 100; line-height: 2.4rem; position: relative; 
     height: 80rem; background: url(images/map-test.png) no-repeat; //sorry, for test view only
+    @include bp(phablet) { max-height: 80rem; }
     .form {
-        .content { padding: 3rem; }
+        .content { padding: 3rem;
+            @include bp(phablet) { padding: 0; }
+        }
+    }
+    .cont { padding-top: 1.5rem; padding-bottom: 1.5rem;
+        &-title { font-weight: bold; }
     }
 
-.cont { padding-top: 1.5rem; padding-bottom: 1.5rem;
-    &-title { font-weight: bold; }
-}
+    .contact { font-weight: bold; }
 
-.contact { font-weight: bold; }
-
-.address {
-    &-title { font-weight: 900; }
-    }
+    .address {
+        &-title { font-weight: 900; }
+        }
 }
